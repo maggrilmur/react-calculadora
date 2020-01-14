@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import './styles.css';
 import Button from '../components/Button/index';
+import Display from '../components/Display/index';
 
 export default class Calculator extends Component {
     render() {
         return (
             <div className="calculator">
+                <Display value={100}/>
                 <Button label='AC'/>
                 <Button label='/'/>
                 <Button label='7'/>
